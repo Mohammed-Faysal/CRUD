@@ -1,0 +1,299 @@
+:root{
+    --color1: #1c74e9;
+    --color2: #ffffff;
+}
+
+body{
+    background: #f0f0f0;
+}
+
+.container{
+    margin-top: 30px;
+    background: #ffffff;
+    box-shadow: 3px 3px 20px rgba(0,0,0,.3);
+    padding: 25px;
+    border-radius: 10px;
+    min-width: 90%;
+}
+
+/* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    max-width: 1500px;
+} */
+
+.container table{
+    width: 100%;
+    border-color: var(--color1);
+}
+
+.container table thead{
+    vertical-align: middle;
+    border-bottom-color: #fff;
+}
+
+.container table thead th,
+.container table tfoot th{
+    border-right-color: #fff ;
+    white-space: nowrap;
+}
+
+.container table thead th:first-child,
+.container table tfoot th:first-child{
+    border-left-color: var(--color1);
+}
+
+.container table thead th:last-child,
+.container table tfoot th:last-child{
+    border-right-color: var(--color1);
+}
+
+table thead tr th,
+table tbody tr td,
+table tfoot tr th{
+    text-align: left !important;
+}
+
+table thead th:last-child{
+    pointer-events: none;
+}
+
+table thead th:last-child .dt-column-order{
+    display: none;
+}
+
+
+
+
+
+table tbody tr{
+    cursor: pointer;
+}
+
+table tbody tr:nth-child(even){
+    background: #f2f2f2 !important;
+}
+
+table tbody tr:hover{
+    background: var(--color1) !important;
+    color: #fff;
+}
+
+table tbody tr:hover td:not(:last-child){
+    border-right-color: #fff;
+}
+
+table tbody tr td{
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+table tbody tr td:first-child{
+    font-weight: 600;
+    text-align: center !important;
+}
+
+table tbody tr td:nth-child(2){
+    text-align: center !important;
+}
+
+table tbody .dt-empty{
+    text-align: center !important;
+}
+
+table thead tr,
+table tfoot tr{
+    background: var(--color1);
+    color: #fff;
+}
+
+tbody tr td:last-child,
+thead tr th:last-child,
+tfoot tr th:last-child{
+    width: 160px;
+}
+
+
+
+
+
+.pagination .dt-paging-button.active .page-link{
+    background: var(--color1) !important;
+    box-shadow: none;
+    border-color: var(--color1);
+}
+
+.pagination .dt-paging-button  .page-link{
+    border-color: var(--color1);
+}
+
+.dt-length .form-select{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Optional: just in case */
+}
+
+.dt-scroll-body{
+    border-bottom: none !important;
+}
+
+.container table tbody tr:last-child{
+    border-bottom-color: #fff;
+}
+
+.btn{
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.btn button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: var(--color1);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.btn button i{
+    font-size: 18px;
+}
+
+.dt-length label, 
+.dt-info{
+    color: var(--color1);
+    font-weight: 600 !important;
+}
+
+#dt-search-0{
+    border-color: var(--color1);
+    box-shadow: none;
+}
+
+#dt-length-0{
+    border-color: var(--color1);
+    box-shadow: none;
+}
+
+
+.actionBtn{
+    border: none;
+    outline: none;
+    background: var(--color1);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+tbody tr:hover .actionBtn{
+    background: #fff;
+    color: var(--color1);
+}
+
+
+.dt-column-order::before,
+.dt-column-order::after{
+    color: #000;
+}
+
+
+
+
+
+/* Modal */
+.modal-header{
+    background: var(--color1);
+    color: #fff;
+}
+
+.cross{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background: transparent;
+}
+
+.modal span{
+    color: red;
+    font-size: 18px;
+}
+
+.allInputFiel{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 25px;
+}
+
+.allInputFiel .imgholder{
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.imgholder:hover .upload{
+    display: flex;
+}
+
+.imgholder .upload{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+}
+
+.imgholder .upload input{
+    display: none;
+}
+
+.upload i{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.imgholder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.allInputFiel .allInput{
+    width: 68%;
+}
+
+
+.submitBtn{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: var(--color1);
+    color: #fff;
+    font-weight: 600;
+}
